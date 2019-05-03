@@ -5,7 +5,7 @@
 		<defName>Work_HamsterWheel</defName>
 		<label>turning hamster wheel</label>
 		<giverClass>HamsterWheel.WorkGiver_HamsterWheel</giverClass>
-		<workType>RK_HamsterWheel</workType>
+		<workType>PowerGen</workType>
 		<priorityInType>1</priorityInType>
 		<verb>turn</verb>
 		<gerund>running at</gerund>

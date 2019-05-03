@@ -78,7 +78,7 @@ namespace HamsterWheel
                     {
                         //Log.Message("WorkGiver_HamsterWheel.pawn.CanReserve = true");
                         CompPowerPlantHamsterWheel compHW = building.TryGetComp<CompPowerPlantHamsterWheel>();
-                        result = (compHW.CanUseNow && compHW.user == null && !building.Position.IsInPrisonCell(pawn.Map) && !building.IsBurning());
+                        result = (compHW.CanUseNow &&  !building.Position.IsInPrisonCell(pawn.Map) && !building.IsBurning());
                     }
                 }
             }
