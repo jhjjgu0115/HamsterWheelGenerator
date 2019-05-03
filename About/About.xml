@@ -5,6 +5,12 @@
 	<supportedVersions>
 		<li>1.0</li>
 	</supportedVersions>
-	<url>https://github.com/jhjjgu0115/HamsterWheel Generator</url>
-	<description></description>
+	<url>https://github.com/jhjjgu0115/HamsterWheelGenerator/</url>
+	<description>
+Generates power from hamster wheel
+
+Turn the wheel and get electricity from rotating energy.
+
+It is available to prisoners and colonists.
+	</description>
 </ModMetaData>
