@@ -2,8 +2,8 @@
 <Defs>
 
 	<JobDef>
-		<defName>RK_Job_HamsterWheel</defName>
-		<driverClass>Lab.JobDriver_HamsterWheel</driverClass>
+		<defName>Job_HamsterWheel</defName>
+		<driverClass>HamsterWheel.JobDriver_HamsterWheel</driverClass>
 		<joyDuration>4000</joyDuration>
 		<joyXpPerTick>0.003</joyXpPerTick>
 		<joyKind>Gaming_Dexterity</joyKind>

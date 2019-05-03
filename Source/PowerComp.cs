@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 
-namespace Lab
+namespace HamsterWheel
 {
     [StaticConstructorOnStartup]
     public class CompPowerPlantHamsterWheel : CompPowerPlant
@@ -29,7 +29,7 @@ namespace Lab
         
         public float maxSpinPower=0;
 
-        public static readonly Material BladesMat = MaterialPool.MatFrom("Things/Building/RK_HamsterWheelGeneratorBlades");
+        public static readonly Material BladesMat = MaterialPool.MatFrom("Things/Building/HamsterWheelGeneratorBlades");
         public static readonly Material Back = MaterialPool.MatFrom("Things/Building/Back");
         public static readonly Material Front = MaterialPool.MatFrom("Things/Building/Front");
 
@@ -150,7 +150,7 @@ namespace Lab
             string text = base.CompInspectStringExtra();
             if (currentSpinPower>0)
             {
-                text = text + "\n" + "RK_MakeGeneratePower".Translate();
+                text = text + "\n" + "CurrentSpeed".Translate() + ": " + currentSpinPower.ToString();
             }
             return text;
         }

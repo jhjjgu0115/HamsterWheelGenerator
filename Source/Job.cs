@@ -6,7 +6,7 @@ using Verse.AI;
 using Harmony;
 using System.Reflection;
 
-namespace Lab
+namespace HamsterWheel
 {
     public class JobDriver_HamsterWheel : JobDriver
     {

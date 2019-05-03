@@ -6,22 +6,22 @@ using RimWorld;
 using Verse;
 
 
-namespace Lab
+namespace HamsterWheel
 {
     [DefOf]
     public static class JobDefOf
     {
-        public static JobDef RK_Job_HamsterWheel;
+        public static JobDef Job_HamsterWheel;
     }
     [DefOf]
     public static class WorkGiverDefOf
     {
-        public static WorkGiverDef RK_Work_HamsterWheel;
+        public static WorkGiverDef Work_HamsterWheel;
     }
     [DefOf]
     public static class ThingDefOf
     {
-        public static ThingDef RK_HamsterWheelGenerator;
+        public static ThingDef HamsterWheelGenerator;
     }
     [DefOf]
     public static class JoyKindDefOf

@@ -2,13 +2,13 @@
 <Defs>
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>RK_HamsterWheelGenerator</defName>
+		<defName>HamsterWheelGenerator</defName>
 		<label>hamster wheel generator</label>
-		<description>Produces electricity from a river. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere and reduce power generation.</description>
+		<description>Produces electricity from a hamster wheel. The amount of power generated is proportional to the running speed.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Things/Building/RK_HamsterWheelGeneratorBody</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/HamsterWheelGeneratorBody</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6,6)</drawSize>
 		</graphicData>
 		<castEdgeShadows>false</castEdgeShadows>
@@ -16,7 +16,7 @@
 		<passability>Standable</passability>
 		<blockWind>true</blockWind>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.7</fillPercent>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,0)</interactionCellOffset>
 		<blockLight>false</blockLight>
@@ -37,7 +37,7 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Power">
-				<compClass>Lab.CompPowerPlantHamsterWheel</compClass>
+				<compClass>HamsterWheel.CompPowerPlantHamsterWheel</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
@@ -51,7 +51,7 @@
 		</building>
 		<constructEffect>ConstructWood</constructEffect>
 		<researchPrerequisites>
-			<li>WatermillGenerator</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>	

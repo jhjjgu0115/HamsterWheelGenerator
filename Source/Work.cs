@@ -5,7 +5,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace Lab
+namespace HamsterWheel
 {
     public class WorkGiver_HamsterWheel : WorkGiver_Scanner
     {
@@ -14,7 +14,7 @@ namespace Lab
             get
             {
                 //Log.Message("WorkGiver_HamsterWheel.PotentialWorkThingRequest");
-                return ThingRequest.ForDef(ThingDefOf.RK_HamsterWheelGenerator);
+                return ThingRequest.ForDef(ThingDefOf.HamsterWheelGenerator);
             }
         }
 
@@ -33,7 +33,7 @@ namespace Lab
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            return pawn.Map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.RK_HamsterWheelGenerator).Cast<Thing>();
+            return pawn.Map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.HamsterWheelGenerator).Cast<Thing>();
         }
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
@@ -42,7 +42,7 @@ namespace Lab
             List<Building> allBuildingsColonist = pawn.Map.listerBuildings.allBuildingsColonist;
             for (int i = 0; i < allBuildingsColonist.Count; i++)
             {
-                if (allBuildingsColonist[i].def == ThingDefOf.RK_HamsterWheelGenerator)
+                if (allBuildingsColonist[i].def == ThingDefOf.HamsterWheelGenerator)
                 {
                     return false;
                 }
@@ -88,7 +88,7 @@ namespace Lab
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             //Log.Message("WorkGiver_HamsterWheel.JobOnThing");
-            return new Job(JobDefOf.RK_Job_HamsterWheel, t, 1500, true);
+            return new Job(JobDefOf.Job_HamsterWheel, t, 1500, true);
         }
     }
 }
